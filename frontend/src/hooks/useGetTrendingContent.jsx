@@ -62,7 +62,7 @@ const useGetTrendingContent = () => {
 			try {
 				console.log(`Fetching trending ${contentType}... (attempt: ${retryCount + 1})`);
 				// Set a timeout for this specific request
-				const res = await axios.get(`/api/v1/${contentType}/trending`, {
+				const res = await axios.get(`http://localhost:8000/api/v1/${contentType}/trending`, {
 					timeout: 8000,
 					headers: {
 						'Cache-Control': 'no-cache',

@@ -14,14 +14,14 @@ import { protectRoute } from "./middleware/protectRoute.js";
 
 const app = express();
 
-const PORT = ENV_VARS.PORT;
+const PORT = 8000;
 const __dirname = path.resolve();
 
 // Configure CORS
 // In development, we use simple CORS config. In production, 
 // it would be more restrictive based on actual domains
 app.use(cors({
-    origin: ENV_VARS.NODE_ENV === 'production' ? true : 'http://localhost:5001',
+    origin: ENV_VARS.NODE_ENV === 'production' ? true : 'http://localhost:5173',
     credentials: true // allow cookies
 }));
 
@@ -57,7 +57,7 @@ app.get("*", (req, res) => {
 
 app.listen(PORT, () => {
 	console.log(`Server started at http://localhost:${PORT}`);
-	console.log(`Serving static files from: ${path.join(__dirname, "/frontend/dist")}`);
+	console.log(`Serving static files from: ${path.join(__dirname, "../frontend/dist")}`);
 	console.log(`NODE_ENV: ${ENV_VARS.NODE_ENV}`);
 	connectDB();
 });

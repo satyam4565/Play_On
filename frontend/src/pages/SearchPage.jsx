@@ -36,7 +36,7 @@ const SearchPage = () => {
 		
 		setIsSearching(true);
 		try {
-			const res = await axios.get(`/api/v1/search/${activeTab}/${searchTerm}`);
+			const res = await axios.get(`http://localhost:8000/api/v1/search/${activeTab}/${searchTerm}`);
 			// Sort results based on the selected sort option
 			let sortedResults = [...res.data.content];
 			if (sortBy === "popularity") {

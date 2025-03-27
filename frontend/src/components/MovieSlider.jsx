@@ -79,7 +79,7 @@ const MovieSlider = ({ category }) => {
 			setError(null);
 			try {
 				console.log(`Fetching ${contentType}/${category}...`);
-				const res = await axios.get(`/api/v1/${contentType}/${category}`);
+				const res = await axios.get(`http://localhost:8000/api/v1/${contentType}/${category}`);
 				console.log(`${category} response:`, res.data);
 				
 				if (!res.data.content || !Array.isArray(res.data.content)) {

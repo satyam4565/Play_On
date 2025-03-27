@@ -9,7 +9,7 @@ const DUMMY_RESPONSES = {
 				id: 1,
 				title: "Dummy Movie 1",
 				overview: "This is a dummy movie since the API key is invalid",
-				poster_path: "/placeholder.png",
+				poster_path: "../public/avtar1.png",
 				backdrop_path: "/placeholder.png",
 				vote_average: 8.5,
 				release_date: "2023-01-01"
