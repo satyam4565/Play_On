@@ -224,7 +224,7 @@ const SignUpPage = () => {
 			</div>
 			
 			<div className='py-4 text-gray-500 text-center text-sm z-10'>
-				<p>© 2024 PlayOn. All rights reserved.</p>
+				<p>© 2025 PlayOn. All rights reserved.</p>
 			</div>
 		</div>
 	);
