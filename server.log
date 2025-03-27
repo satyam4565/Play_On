@@ -1,0 +1,6 @@
+
+> netflix-clone@1.0.0 start
+> NODE_ENV=production node backend/server.js
+
+Server started at http://localhost:5001
+MongoDB connected: localhost

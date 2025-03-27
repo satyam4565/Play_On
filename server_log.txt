@@ -1,0 +1,10 @@
+Server started at http://localhost:5001
+Serving static files from: /Users/satyamsingh/Desktop/Netflix Clone/frontend/dist
+NODE_ENV: production
+MongoDB connected: localhost
+2025-03-26T16:39:24.562Z - HEAD /api/v1/auth/authCheck
+Protecting route: /api/v1/auth/authCheck
+No JWT token found in cookies
+2025-03-26T16:39:29.046Z - HEAD /api/v1/movie/trending
+Protecting route: /api/v1/movie/trending
+No JWT token found in cookies
